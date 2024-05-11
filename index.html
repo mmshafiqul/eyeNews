@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid topNavbar shadow">
+            <div class="container-lg d-flex align-items-center">
+                <!-- Trending section -->
+                <div class="bg-danger d-inline p-2 text-center text-light me-md-4">Trending</div>
+
+                <!-- Carousel -->
+                <div class="carousel slide d-inline-block col-8" id="trendingSlide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <a class="text-secondary text-decoration-none text-black text-truncate" href="">Labore sit
+                                justo amet eos sed, et sanctus dolor diam eos</a>
+                        </div>
+                        <div class="carousel-item">
+                            <a class="text-secondary text-decoration-none text-black text-truncate" href="">Gubergren
+                                elitr amet eirmod et lorem diam elitr, ut est erat
+                                Gubergren elitr amet eirmod et lorem diam elitr, ut est erat</a>
+                        </div>
+                        <div class="carousel-item">
+                            <a class="text-secondary text-decoration-none text-black text-truncate" href="">Lorem ipsum,
+                                dolor sit amet consectetur adipisicing elit. Porro repudiandae quo magni illo pariatur
+                                quasi sit odio. Reiciendis, illo natus!</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Current Date -->
+                <div id="day" class="ms-auto d-md-inline-block"></div>
+            </div>
+        </div>
+        <!-- website logo -->
+        <div class="d-flex container my-2 align-items-center">
+            <div class="col-lg-4 col-md-0 col-0 d-lg-block d-md-none d-none">
+                <h1><span class="text-danger fw-bolder ">eye</span>News</h1>
+            </div>
+            <div class="bg-black col-lg-8 col-md-12 col-12">
+                <p class="text-light text-center" style="height:60px;">Place your ad here</p>
+            </div>
+        </div>
+        <!-- navBar start here -->
+        <nav class="navbar container-fluid shadow navbar-expand-lg py-0">
+            <div class="container">
+                <h1 class="navbar-brand d-lg-none"><span class="text-danger fw-bolder ">eye</span>News</h1>
+                <button class="navbar-toggler p-1" data-bs-toggle="collapse" data-bs-target="#burgerIcon"><img
+                        src="icons/list.svg" alt=""></button>
+                <div class="collapse navbar-collapse" id="burgerIcon">
+                    <ul class="navbar-nav align-items-sm-center">
+                        <li class="nav-item "><a href="#" class="nav-link hover">Home</a></li>
+                        <li class="nav-item "><a href="#" class="nav-link hover">Categories</a></li>
+                        <li class="nav-item "><a href="#" class="nav-link hover">Single News</a></li>
+                        <li class="nav-item dropdown"><a href="#" class="nav-link hover dropdown-toggle"
+                                data-bs-toggle="dropdown">Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link dropdown-item categoryItem hover" href="#">Ctegory 1</a></li>
+                                <li><a class="nav-link dropdown-item categoryItem hover" href="#">Ctegory 2</a></li>
+                                <li><a class="nav-link dropdown-item categoryItem hover" href="#">Ctegory 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link hover">Contact</a></li>
+                    </ul>
+
+                    <div class="d-flex d-inline-block  ms-auto">
+                        <input type="text" class="form-control  w-100 ms-auto" placeholder="Search here...">
+                        <button class="border-0 bg-transparent"><img src="icons/search.svg" alt=""
+                                class="py-1 border-0 bg-transparent z-2" style="margin-left: -28px;"></button>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- top news slider section -->
+
+    <div class="container-fluid my-2">
+        <div class="container">
+            <div class="carousel slide carousel-fade" id="topNewsSlide" data-bs-ride="carousel">
+                <div class="carousel-inner ">
+                    <div class="d-md-flex carousel-item justify-content-around active justify-items-center">
+                        <div class="d-flex my-2 my-md-0 shadow">
+                            <img src="img/news-100x100-1.jpg" style="width: 80px; height: 80px; object-fit: cover;">
+                            <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
+                                <a class=" font-weight-semi-bold text-decoration-none text-black" href="">Lorem ipsum
+                                    dolor sit
+                                    amet
+                                    consec adipis elit</a>
+                            </div>
+                        </div>
+                        <div class="d-flex shadow">
+                            <img src="img/news-100x100-2.jpg" style="width: 80px; height: 80px; object-fit: cover;">
+                            <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
+                                <a class=" font-weight-semi-bold text-decoration-none text-black" href="">Lorem ipsum
+                                    dolor sit
+                                    amet
+                                    consec adipis elit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-md-flex justify-content-around carousel-item justify-items-center">
+                        <div class="d-flex my-2 my-md-0 shadow">
+                            <img src="img/news-100x100-3.jpg" style="width: 80px; height: 80px; object-fit: cover;">
+                            <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
+                                <a class="font-weight-semi-bold text-decoration-none text-black" href="">Lorem ipsum
+                                    dolor sit amet
+                                    consec adipis
+                                    elit</a>
+                            </div>
+                        </div>
+                        <div class="d-flex shadow">
+                            <img src="img/news-100x100-4.jpg" style="width: 80px; height: 80px; object-fit: cover;">
+                            <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
+                                <a class=" font-weight-semi-bold text-decoration-none text-black" href="">Lorem ipsum
+                                    dolor sit
+                                    amet
+                                    consec adipis
+                                    elit</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- all javaScripts -->
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
