@@ -3,6 +3,7 @@ const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numer
 const formattedDate = d.toLocaleDateString(undefined, options);
 document.getElementById("day").innerHTML = formattedDate;
 
+
 // owl-careousel
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({

@@ -12,15 +12,15 @@
 </head>
 
 <body>
-
+    <!-- headers section -->
     <header>
         <div class="container-fluid topNavbar shadow">
             <div class="container-lg d-flex align-items-center">
-                <!-- Trending section -->
+                <!-- Trending section with marquee-->
                 <div class="bg-danger d-inline p-2 text-center text-light me-md-4">Trending</div>
 
                 <!-- Carousel -->
-                <div class="carousel slide d-inline-block col-8" id="trendingSlide" data-bs-ride="carousel">
+                <!-- <div class="carousel slide d-inline-block col-8" id="trendingSlide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active ">
                             <a class="text-secondary text-decoration-none text-black text-truncate" href="">Labore sit
@@ -37,9 +37,21 @@
                                 quasi sit odio. Reiciendis, illo natus!</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
+                <!-- marquee -->
+                <marquee behavior="scroll" direction="left" scrollamount="5" class="d-flex container w-75">
+                    <p class="d-inline bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                        numquam dolorem, nisi cupiditate nobis earum!</p>
+                    <p class="d-inline bg-warning">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, nisi
+                        ipsa! Voluptatem.</p>
+                    <p class="d-inline bg-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, autem!
+                    </p>
+                    <p class="d-inline bg-warning">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, nisi
+                        ipsa! Voluptatem.</p>
+                    <!-- Add more <p> tags with your news headlines -->
+                </marquee>
                 <!-- Current Date -->
-                <div id="day" class="ms-auto d-md-inline-block"></div>
+                <div id="day" class="ms-auto d-md-inline-block w-md-75"></div>
             </div>
         </div>
         <!-- website logo -->
@@ -53,7 +65,7 @@
         </div>
         <!-- navBar start here -->
         <nav class="navbar container-fluid shadow navbar-expand-lg py-0">
-            <div class="container">
+            <div class="container ">
                 <h1 class="navbar-brand d-lg-none"><span class="text-danger fw-bolder ">eye</span>News</h1>
                 <button class="navbar-toggler p-1" data-bs-toggle="collapse" data-bs-target="#burgerIcon"><img
                         src="icons/list.svg" alt=""></button>
@@ -73,7 +85,7 @@
                         <li class="nav-item"><a href="#" class="nav-link hover">Contact</a></li>
                     </ul>
 
-                    <div class="d-flex d-inline-block  ms-auto">
+                    <div class="d-flex d-inline-block  ms-auto py-2">
                         <input type="text" class="form-control  w-100 ms-auto" placeholder="Search here...">
                         <button class="border-0 bg-transparent"><img src="icons/search.svg" alt=""
                                 class="py-1 border-0 bg-transparent z-2" style="margin-left: -28px;"></button>
@@ -136,86 +148,166 @@
         </div>
     </div>
 
-
-    <!-- Featured section -->
-    <section id="featuredSlider">
-        <div class="container">
-            <div class="d-flex justify-content-between align-content-center bg-body shadow">
-                <h3 class="fw-bolder py-2 px-4 mb-0">Featured</h3>
-                <button class="bg-body shaodw border-0 px-4" type="button"><a href="" class="text-decoration-none text-dark">View All</a></button>
+    <!-- slider and categories section -->
+    <div class="container-fluid my-3">
+        <div class="container d-lg-flex">
+            <div id="carouselExampleDark" class="carousel slide col-lg-7 col-12 mb-3">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/news-500x280-1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="slide-text">
+                                <div class="" style="font-size: 13px;">
+                                    <a class="" href="">Technology</a>
+                                    <span class="px-1 text-light">/</span>
+                                    <a class="" href="">Jan 01, 2025</a>
+                                </div>
+                                <a class="h4 m-0" href="">Sanctus amet sed ipsum lorem 1</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="img/news-500x280-2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="slide-text">
+                                <div class="" style="font-size: 13px;">
+                                    <a class="" href="">Technology</a>
+                                    <span class="px-1 text-light">/</span>
+                                    <a class="" href="">Jan 01, 2025</a>
+                                </div>
+                                <a class="h4 m-0" href="">Sanctus amet sed ipsum lorem 1</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/news-500x280-3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="slide-text">
+                                <div class="" style="font-size: 13px;">
+                                    <a class="" href="">Technology</a>
+                                    <span class="px-1 text-light">/</span>
+                                    <a class="" href="">Jan 01, 2025</a>
+                                </div>
+                                <a class="h4 m-0" href="">Sanctus amet sed ipsum lorem 1</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span><img src="icons/arrow-left-square-fill.svg" alt=""></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span><img src="icons/arrow-right-square-fill.svg" alt=""></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="slider">
-                <div class="owl-carousel">
-                    <div class="slider-card">
-                        <div class="bg-body shadow">
-                            <img src="img/news-300x300-1.jpg" alt=""class="">
-                            <div class="overlay slide-text">
-                                <div class="" style="font-size: 13px;">
-                                    <a class="" href="">Technology</a>
-                                    <span class="px-1 text-light">/</span>
-                                    <a class="" href="">Jan 01, 2025</a>
-                                </div>
-                                <a class="h4 m-0" href="">Sanctus amet sed ipsum lorem 1</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="bg-body shadow">
-                            <img src="img/news-300x300-2.jpg" alt=""class="">
-                            <div class="overlay slide-text">
-                                <div class="" style="font-size: 13px;">
-                                    <a class="" href="">Technology</a>
-                                    <span class="px-1 text-light">/</span>
-                                    <a class="" href="">Jan 01, 2025</a>
-                                </div>
-                                <a class="h4 m-0" href="">Sanctus amet sed ipsum lorem 1</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="bg-body shadow">
-                            <img src="img/news-300x300-3.jpg" alt=""class="">
-                            <div class="overlay slide-text">
-                                <div class="" style="font-size: 13px;">
-                                    <a class="" href="">Technology</a>
-                                    <span class="px-1 text-light">/</span>
-                                    <a class="" href="">Jan 01, 2025</a>
-                                </div>
-                                <a class="h4 m-0" href="">Sanctus amet sed ipsum lorem 1</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="bg-body shadow">
-                            <img src="img/news-300x300-4.jpg" alt=""class="">
-                            <div class="overlay slide-text">
-                                <div class="" style="font-size: 13px;">
-                                    <a class="" href="">Technology</a>
-                                    <span class="px-1 text-light">/</span>
-                                    <a class="" href="">Jan 01, 2025</a>
-                                </div>
-                                <a class="h4 m-0" href="">Sanctus amet sed ipsum lorem 1</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="bg-body shadow">
-                            <img src="img/news-300x300-5.jpg" alt=""class="">
-                            <div class="overlay slide-text">
-                                <div class="" style="font-size: 13px;">
-                                    <a class="" href="">Technology</a>
-                                    <span class="px-1 text-light">/</span>
-                                    <a class="" href="">Jan 01, 2025</a>
-                                </div>
-                                <a class="h4 m-0" href="">Sanctus amet sed ipsum lorem 1</a>
-                            </div>
-                        </div>
-                    </div>
-                    
+            <div class="ms-auto w-100 ms-lg-3 px-lg-2 px-0 mb-3 ">
+                <div class="d-flex justify-content-between align-content-center bg-body shadow">
+                    <h3 class="fw-bold py-2 px-4 mb-0">Categories</h3>
+                    <button class="bg-body shaodw border-0 px-4" type="button"><a href="" class="text-decoration-none text-dark">View All</a></button>
+                </div>
+                <div class="card card-dark mt-2 rounded-0 ">
+                    <img src="img/cat-500x80-2.jpg" alt="" class="card-img rounded-0">
+                    <a href="#"><p class="card-img-overlay text-decoration-none text-white fs-4 text-center fw-bold shadow">Technology</p></a>
+                </div>
+                <div class="card mt-2 rounded-0 ">
+                    <img src="img/cat-500x80-3.jpg" alt="" class="card-img rounded-0">
+                    <a href="#"><p class="card-img-overlay text-decoration-none text-white fs-4 text-center fw-bold shadow">Entertainment</p></a>
+                </div>
+                <div class="card mt-2 rounded-0 ">
+                    <img src="img/cat-500x80-4.jpg" alt="" class="card-img rounded-0">
+                    <a href="#"><p class="card-img-overlay text-decoration-none text-white fs-4 text-center fw-bold shadow">Sports</p></a>
+                </div>
+                <div class="card mt-2 rounded-0 ">
+                    <img src="img/cat-500x80-1.jpg" alt="" class="card-img rounded-0">
+                    <a href="#"><p class="card-img-overlay text-decoration-none text-white fs-4 text-center fw-bold shadow">Business</p></a>
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- Featured section -->
+        <section id="featuredSlider">
+            <div class="container">
+                <div class="d-flex justify-content-between align-content-center bg-body shadow">
+                    <h3 class="fw-bolder py-2 px-4 mb-0">Featured</h3>
+                    <button class="bg-body shaodw border-0 px-4" type="button"><a href=""
+                            class="text-decoration-none text-dark">View All</a></button>
+                </div>
+                <div class="slider">
+                    <div class="owl-carousel">
+                        <div class="slider-card">
+                            <div class="bg-body shadow">
+                                <img src="img/news-300x300-1.jpg" alt="" class="">
+                                <div class="overlay slide-text">
+                                    <div class="" style="font-size: 13px;">
+                                        <a class="" href="">Technology</a>
+                                        <span class="px-1 text-light">/</span>
+                                        <a class="" href="">Jan 01, 2025</a>
+                                    </div>
+                                    <a class="h4 m-0" href="">Sanctus amet sed ipsum lorem 1</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-card">
+                            <div class="bg-body shadow">
+                                <img src="img/news-300x300-2.jpg" alt="" class="">
+                                <div class="overlay slide-text">
+                                    <div class="" style="font-size: 13px;">
+                                        <a class="" href="">Technology</a>
+                                        <span class="px-1 text-light">/</span>
+                                        <a class="" href="">Jan 01, 2025</a>
+                                    </div>
+                                    <a class="h4 m-0" href="">Sanctus amet sed ipsum lorem 1</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-card">
+                            <div class="bg-body shadow">
+                                <img src="img/news-300x300-3.jpg" alt="" class="">
+                                <div class="overlay slide-text">
+                                    <div class="" style="font-size: 13px;">
+                                        <a class="" href="">Technology</a>
+                                        <span class="px-1 text-light">/</span>
+                                        <a class="" href="">Jan 01, 2025</a>
+                                    </div>
+                                    <a class="h4 m-0" href="">Sanctus amet sed ipsum lorem 1</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-card">
+                            <div class="bg-body shadow">
+                                <img src="img/news-300x300-4.jpg" alt="" class="">
+                                <div class="overlay slide-text">
+                                    <div class="" style="font-size: 13px;">
+                                        <a class="" href="">Technology</a>
+                                        <span class="px-1 text-light">/</span>
+                                        <a class="" href="">Jan 01, 2025</a>
+                                    </div>
+                                    <a class="h4 m-0" href="">Sanctus amet sed ipsum lorem 1</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-card">
+                            <div class="bg-body shadow">
+                                <img src="img/news-300x300-5.jpg" alt="" class="">
+                                <div class="overlay slide-text">
+                                    <div class="" style="font-size: 13px;">
+                                        <a class="" href="">Technology</a>
+                                        <span class="px-1 text-light">/</span>
+                                        <a class="" href="">Jan 01, 2025</a>
+                                    </div>
+                                    <a class="h4 m-0" href="">Sanctus amet sed ipsum lorem 1</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
@@ -226,15 +318,92 @@
 
 
 
-
-
-
-    <!-- all javaScripts -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="scripts/owl.carousel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-    <script src="scripts/script.js"></script>
+        <!-- footer start -->
+        <div class="container-fluid bg-light pt-5 px-sm-3 px-md-5 bg-body shadow">
+            <div class="row container">
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1><span class="text-danger fw-bolder ">eye</span>News</h1>
+                    </a>
+                    <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et
+                    </p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="btn btn-outline-secondary text-center m-2 px-0" style="width: 38px; height: 38px;"
+                            href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-secondary text-center m-2 px-0" style="width: 38px; height: 38px;"
+                            href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-secondary text-center m-2 px-0" style="width: 38px; height: 38px;"
+                            href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-secondary text-center m-2 px-0" style="width: 38px; height: 38px;"
+                            href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-secondary text-center m-2 px-0" style="width: 38px; height: 38px;"
+                            href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="font-weight-bold mb-4">Categories</h4>
+                    <div class="d-flex flex-wrap m-n1">
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="font-weight-bold mb-4">Tags</h4>
+                    <div class="d-flex flex-wrap m-n1">
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="font-weight-bold mb-4">Quick Links</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-secondary mb-2" href="#"><i
+                                class="fa fa-angle-right text-dark mr-2"></i>About</a>
+                        <a class="text-secondary mb-2" href="#"><i
+                                class="fa fa-angle-right text-dark mr-2"></i>Advertise</a>
+                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Privacy
+                            &amp; policy</a>
+                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Terms
+                            &amp;
+                            conditions</a>
+                        <a class="text-secondary" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-4 px-sm-3 px-md-5">
+            <p class="m-0 text-center">
+                © <a class="font-weight-bold text-decoration-none " href="#"><span class="text-danger">eye</span><span
+                        class="text-dark">News</span></a>. All Rights Reserved. Designed by <a
+                    class="font-weight-bold text-decoration-none text-danger" href="#">mmsuzon</a>
+            </p>
+        </div>
+        <!-- all javaScripts -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="scripts/owl.carousel.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+        <script src="scripts/script.js"></script>
 </body>
 
 </html
