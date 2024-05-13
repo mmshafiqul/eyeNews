@@ -40,11 +40,13 @@
                 </div> -->
                 <!-- marquee -->
                 <marquee behavior="scroll" direction="left" scrollamount="5" class="d-flex container w-75">
-                    <p class="d-inline bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                    <p class="d-inline bg-info me-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
                         numquam dolorem, nisi cupiditate nobis earum!</p>
-                    <p class="d-inline bg-warning">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, nisi
+                    <p class="d-inline bg-warning me-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+                        nisi
                         ipsa! Voluptatem.</p>
-                    <p class="d-inline bg-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, autem!
+                    <p class="d-inline bg-info me-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                        autem!
                     </p>
                     <p class="d-inline bg-warning">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, nisi
                         ipsa! Voluptatem.</p>
@@ -71,7 +73,7 @@
                         src="icons/list.svg" alt=""></button>
                 <div class="collapse navbar-collapse" id="burgerIcon">
                     <ul class="navbar-nav align-items-sm-center">
-                        <li class="nav-item "><a href="#" class="nav-link hover">Home</a></li>
+                        <li class="nav-item "><a href="/" class="nav-link hover active">Home</a></li>
                         <li class="nav-item "><a href="#" class="nav-link hover">Categories</a></li>
                         <li class="nav-item "><a href="#" class="nav-link hover">Single News</a></li>
                         <li class="nav-item dropdown"><a href="#" class="nav-link hover dropdown-toggle"
@@ -82,7 +84,7 @@
                                 <li><a class="nav-link dropdown-item categoryItem hover" href="#">Ctegory 3</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a href="#" class="nav-link hover">Contact</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link hover">Contact</a></li>
                     </ul>
 
                     <div class="d-flex d-inline-block  ms-auto py-2">
@@ -104,7 +106,7 @@
                     <div class="d-md-flex carousel-item justify-content-around active justify-items-center">
                         <div class="d-flex my-2 my-md-0 shadow">
                             <img src="img/news-100x100-1.jpg" style="width: 80px; height: 80px; object-fit: cover;">
-                            <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
+                            <div class="d-flex align-items-center bg-body px-3" style="height: 80px;">
                                 <a class=" font-weight-semi-bold text-decoration-none text-black" href="">Lorem ipsum
                                     dolor sit
                                     amet
@@ -113,7 +115,7 @@
                         </div>
                         <div class="d-flex shadow">
                             <img src="img/news-100x100-2.jpg" style="width: 80px; height: 80px; object-fit: cover;">
-                            <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
+                            <div class="d-flex align-items-center bg-body px-3" style="height: 80px;">
                                 <a class=" font-weight-semi-bold text-decoration-none text-black" href="">Lorem ipsum
                                     dolor sit
                                     amet
@@ -124,7 +126,7 @@
                     <div class="d-md-flex justify-content-around carousel-item justify-items-center">
                         <div class="d-flex my-2 my-md-0 shadow">
                             <img src="img/news-100x100-3.jpg" style="width: 80px; height: 80px; object-fit: cover;">
-                            <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
+                            <div class="d-flex align-items-center bg-body px-3" style="height: 80px;">
                                 <a class="font-weight-semi-bold text-decoration-none text-black" href="">Lorem ipsum
                                     dolor sit amet
                                     consec adipis
@@ -133,7 +135,7 @@
                         </div>
                         <div class="d-flex shadow">
                             <img src="img/news-100x100-4.jpg" style="width: 80px; height: 80px; object-fit: cover;">
-                            <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
+                            <div class="d-flex align-items-center bg-body px-3" style="height: 80px;">
                                 <a class=" font-weight-semi-bold text-decoration-none text-black" href="">Lorem ipsum
                                     dolor sit
                                     amet
@@ -151,9 +153,9 @@
     <!-- slider and categories section -->
     <div class="container-fluid my-3">
         <div class="container d-lg-flex">
-            <div id="carouselExampleDark" class="carousel slide col-lg-7 col-12 mb-3">
+            <div id="mainNewsCarousel" class="carousel slide col-lg-7 col-12 mb-3">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" data-bs-interval="10000">
                         <img src="img/news-500x280-1.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <div class="slide-text">
@@ -166,7 +168,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item ">
+                    <div class="carousel-item" data-bs-interval="2000">
                         <img src="img/news-500x280-2.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <div class="slide-text">
@@ -179,7 +181,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="2000">
                         <img src="img/news-500x280-3.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <div class="slide-text">
@@ -193,12 +195,12 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainNewsCarousel"
                     data-bs-slide="prev">
                     <span><img src="icons/arrow-left-square-fill.svg" alt=""></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                <button class="carousel-control-next" type="button" data-bs-target="#mainNewsCarousel"
                     data-bs-slide="next">
                     <span><img src="icons/arrow-right-square-fill.svg" alt=""></span>
                     <span class="visually-hidden">Next</span>
@@ -207,23 +209,36 @@
             <div class="ms-auto w-100 ms-lg-3 px-lg-2 px-0 mb-3 ">
                 <div class="d-flex justify-content-between align-content-center bg-body shadow">
                     <h3 class="fw-bold py-2 px-4 mb-0">Categories</h3>
-                    <button class="bg-body shaodw border-0 px-4" type="button"><a href="" class="text-decoration-none text-dark">View All</a></button>
+                    <button class="bg-body shaodw border-0 px-4" type="button"><a href=""
+                            class="text-decoration-none text-dark">View All</a></button>
                 </div>
                 <div class="card card-dark mt-2 rounded-0 ">
                     <img src="img/cat-500x80-2.jpg" alt="" class="card-img rounded-0">
-                    <a href="#"><p class="card-img-overlay text-decoration-none text-white fs-4 text-center fw-bold shadow">Technology</p></a>
+                    <a href="#">
+                        <p class="card-img-overlay text-decoration-none text-white fs-4 text-center fw-bold shadow">
+                            Technology</p>
+                    </a>
                 </div>
                 <div class="card mt-2 rounded-0 ">
                     <img src="img/cat-500x80-3.jpg" alt="" class="card-img rounded-0">
-                    <a href="#"><p class="card-img-overlay text-decoration-none text-white fs-4 text-center fw-bold shadow">Entertainment</p></a>
+                    <a href="#">
+                        <p class="card-img-overlay text-decoration-none text-white fs-4 text-center fw-bold shadow">
+                            Entertainment</p>
+                    </a>
                 </div>
                 <div class="card mt-2 rounded-0 ">
                     <img src="img/cat-500x80-4.jpg" alt="" class="card-img rounded-0">
-                    <a href="#"><p class="card-img-overlay text-decoration-none text-white fs-4 text-center fw-bold shadow">Sports</p></a>
+                    <a href="#">
+                        <p class="card-img-overlay text-decoration-none text-white fs-4 text-center fw-bold shadow">
+                            Sports</p>
+                    </a>
                 </div>
                 <div class="card mt-2 rounded-0 ">
                     <img src="img/cat-500x80-1.jpg" alt="" class="card-img rounded-0">
-                    <a href="#"><p class="card-img-overlay text-decoration-none text-white fs-4 text-center fw-bold shadow">Business</p></a>
+                    <a href="#">
+                        <p class="card-img-overlay text-decoration-none text-white fs-4 text-center fw-bold shadow">
+                            Business</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -308,18 +323,373 @@
                 </div>
             </div>
         </section>
+        <!-- main news with sidebar -->
+        <div class="container-fluid py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <div
+                                    class="d-flex align-items-center justify-content-between  py-2 px-4 mb-3 bg-body shadow">
+                                    <h3 class="m-0">Popular</h3>
+                                    <a class="text-secondary font-weight-medium text-decoration-none text-dark"
+                                        href="">View
+                                        All</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="position-relative mb-3">
+                                    <img class="img-fluid w-100" src="img/news-500x280-2.jpg"
+                                        style="object-fit: cover;">
+                                    <div class="overlay position-relative bg-body shadow p-3">
+                                        <div class="mb-2" style="font-size: 14px;">
+                                            <a href="">Technology</a>
+                                            <span class="px-1">/</span>
+                                            <span>January 01, 2045</span>
+                                        </div>
+                                        <a class="h4" href="">Est stet amet ipsum stet clita rebum duo</a>
+                                        <p class="m-0">Rebum dolore duo et vero ipsum clita, est ea sed duo diam ipsum,
+                                            clita at justo, lorem amet vero eos sed sit...</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <img src="img/news-100x100-1.jpg"
+                                        style="width: 100px; height: 100px; object-fit: cover;">
+                                    <div class="w-100 d-flex flex-column justify-content-center bg-body shadow px-3"
+                                        style="height: 100px;">
+                                        <div class="mb-1" style="font-size: 13px;">
+                                            <a href="">Technology</a>
+                                            <span class="px-1">/</span>
+                                            <span>January 01, 2045</span>
+                                        </div>
+                                        <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <img src="img/news-100x100-2.jpg"
+                                        style="width: 100px; height: 100px; object-fit: cover;">
+                                    <div class="w-100 d-flex flex-column justify-content-center bg-body shadow px-3"
+                                        style="height: 100px;">
+                                        <div class="mb-1" style="font-size: 13px;">
+                                            <a href="">Technology</a>
+                                            <span class="px-1">/</span>
+                                            <span>January 01, 2045</span>
+                                        </div>
+                                        <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="position-relative mb-3">
+                                    <img class="img-fluid w-100" src="img/news-500x280-3.jpg"
+                                        style="object-fit: cover;">
+                                    <div class="overlay position-relative bg-body shadow p-3">
+                                        <div class="mb-2" style="font-size: 14px;">
+                                            <a href="">Technology</a>
+                                            <span class="px-1">/</span>
+                                            <span>January 01, 2045</span>
+                                        </div>
+                                        <a class="h4" href="">Est stet amet ipsum stet clita rebum duo</a>
+                                        <p class="m-0">Rebum dolore duo et vero ipsum clita, est ea sed duo diam ipsum,
+                                            clita at justo, lorem amet vero eos sed sit...</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <img src="img/news-100x100-3.jpg"
+                                        style="width: 100px; height: 100px; object-fit: cover;">
+                                    <div class="w-100 d-flex flex-column justify-content-center bg-body shadow px-3"
+                                        style="height: 100px;">
+                                        <div class="mb-1" style="font-size: 13px;">
+                                            <a href="">Technology</a>
+                                            <span class="px-1">/</span>
+                                            <span>January 01, 2045</span>
+                                        </div>
+                                        <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <img src="img/news-100x100-4.jpg"
+                                        style="width: 100px; height: 100px; object-fit: cover;">
+                                    <div class="w-100 d-flex flex-column justify-content-center bg-body shadow px-3"
+                                        style="height: 100px;">
+                                        <div class="mb-1" style="font-size: 13px;">
+                                            <a href="">Technology</a>
+                                            <span class="px-1">/</span>
+                                            <span>January 01, 2045</span>
+                                        </div>
+                                        <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="bg-black ">
+                            <p class="text-light text-center" style="height:80px;">Place your ad here</p>
+                        </div>
 
+                        <div class="row">
+                            <div class="col-12">
+                                <div
+                                    class="d-flex align-items-center justify-content-between bg-body py-2 px-4 mb-3 shadow">
+                                    <h3 class="m-0">Latest</h3>
+                                    <a class="text-secondary font-weight-medium text-decoration-none text-dark"
+                                        href="">View
+                                        All</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="position-relative mb-3">
+                                    <img class="img-fluid w-100" src="img/news-500x280-5.jpg"
+                                        style="object-fit: cover;">
+                                    <div class="overlay position-relative bg-body shadow p-3">
+                                        <div class="mb-2" style="font-size: 14px;">
+                                            <a href="">Technology</a>
+                                            <span class="px-1">/</span>
+                                            <span>January 01, 2045</span>
+                                        </div>
+                                        <a class="h4" href="">Est stet amet ipsum stet clita rebum duo</a>
+                                        <p class="m-0">Rebum dolore duo et vero ipsum clita, est ea sed duo diam ipsum,
+                                            clita at justo, lorem amet vero eos sed sit...</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <img src="img/news-100x100-5.jpg"
+                                        style="width: 100px; height: 100px; object-fit: cover;">
+                                    <div class="w-100 d-flex flex-column justify-content-center bg-body shadow px-3"
+                                        style="height: 100px;">
+                                        <div class="mb-1" style="font-size: 13px;">
+                                            <a href="">Technology</a>
+                                            <span class="px-1">/</span>
+                                            <span>January 01, 2045</span>
+                                        </div>
+                                        <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <img src="img/news-100x100-1.jpg"
+                                        style="width: 100px; height: 100px; object-fit: cover;">
+                                    <div class="w-100 d-flex flex-column justify-content-center bg-body shadow px-3"
+                                        style="height: 100px;">
+                                        <div class="mb-1" style="font-size: 13px;">
+                                            <a href="">Technology</a>
+                                            <span class="px-1">/</span>
+                                            <span>January 01, 2045</span>
+                                        </div>
+                                        <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="position-relative mb-3">
+                                    <img class="img-fluid w-100" src="img/news-500x280-6.jpg"
+                                        style="object-fit: cover;">
+                                    <div class="overlay position-relative bg-body shadow p-3">
+                                        <div class="mb-2" style="font-size: 14px;">
+                                            <a href="">Technology</a>
+                                            <span class="px-1">/</span>
+                                            <span>January 01, 2045</span>
+                                        </div>
+                                        <a class="h4" href="">Est stet amet ipsum stet clita rebum duo</a>
+                                        <p class="m-0">Rebum dolore duo et vero ipsum clita, est ea sed duo diam ipsum,
+                                            clita at justo, lorem amet vero eos sed sit...</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <img src="img/news-100x100-2.jpg"
+                                        style="width: 100px; height: 100px; object-fit: cover;">
+                                    <div class="w-100 d-flex flex-column justify-content-center bg-body shadow px-3"
+                                        style="height: 100px;">
+                                        <div class="mb-1" style="font-size: 13px;">
+                                            <a href="">Technology</a>
+                                            <span class="px-1">/</span>
+                                            <span>January 01, 2045</span>
+                                        </div>
+                                        <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <img src="img/news-100x100-3.jpg"
+                                        style="width: 100px; height: 100px; object-fit: cover;">
+                                    <div class="w-100 d-flex flex-column justify-content-center bg-body shadow px-3"
+                                        style="height: 100px;">
+                                        <div class="mb-1" style="font-size: 13px;">
+                                            <a href="">Technology</a>
+                                            <span class="px-1">/</span>
+                                            <span>January 01, 2045</span>
+                                        </div>
+                                        <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-4 pt-3 pt-lg-0">
+                        <!-- Social Follow Start -->
+                        <div class="pb-3">
+                            <div class="bg-body shadow py-2 px-4 mb-3">
+                                <h3 class="m-0">Follow Us</h3>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none me-2"
+                                    style="background: #39569E;">
+                                    <small class="fab fa-facebook-f me-2"></small><small>12,345 Fans</small>
+                                </a>
+                                <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ms-2"
+                                    style="background: #52AAF4;">
+                                    <small class="fab fa-twitter me-2"></small><small>12,345 Followers</small>
+                                </a>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none me-2"
+                                    style="background: #0185AE;">
+                                    <small class="fab fa-linkedin-in me-2"></small><small>12,345 Connects</small>
+                                </a>
+                                <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ms-2"
+                                    style="background: #C8359D;">
+                                    <small class="fab fa-instagram me-2"></small><small>12,345 Followers</small>
+                                </a>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <a href="" class="d-block w-50 py-2 px-2 text-white text-decoration-none me-2"
+                                    style="background: #DC472E;">
+                                    <small class="fab fa-youtube me-1"></small><small>12,345 Subscribers</small>
+                                </a>
+                                <a href="" class="d-block w-50 py-2 px-2 text-white text-decoration-none ms-2"
+                                    style="background: #1AB7EA;">
+                                    <small class="fab fa-vimeo-v me-1"></small><small>12,345 Followers</small>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Social Follow End -->
 
+                        <!-- Newsletter Start -->
+                        <div class="pb-3">
+                            <div class="bg-body shadow py-2 px-4 mb-3">
+                                <h3 class="m-0">Newsletter</h3>
+                            </div>
+                            <div class="bg-body shadow text-center p-4 mb-3">
+                                <p>Aliqu justo et labore at eirmod justo sea erat diam dolor diam vero kasd</p>
+                                <div class="input-group" style="width: 100%;">
+                                    <input type="text" class="form-control form-control" placeholder="Your Email">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-info rounded-start-0">Sign Up</button>
+                                    </div>
+                                </div>
+                                <small>Sit eirmod nonumy kasd eirmod</small>
+                            </div>
+                        </div>
+                        <!-- Newsletter End -->
 
+                        <!-- Ads Start -->
+                        <div class="mb-3 pb-3">
+                            <a href=""><img class="img-fluid" src="img/" alt=""></a>
+                        </div>
+                        <!-- Ads End -->
 
+                        <!-- Popular News Start -->
+                        <div class="pb-3">
+                            <div class="bg-body shadow py-2 px-4 mb-3">
+                                <h3 class="m-0">Tranding</h3>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <img src="img/news-100x100-1.jpg"
+                                    style="width: 100px; height: 100px; object-fit: cover;">
+                                <div class="w-100 d-flex flex-column justify-content-center bg-body shadow px-3"
+                                    style="height: 100px;">
+                                    <div class="mb-1" style="font-size: 13px;">
+                                        <a href="">Technology</a>
+                                        <span class="px-1">/</span>
+                                        <span>January 01, 2045</span>
+                                    </div>
+                                    <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <img src="img/news-100x100-2.jpg"
+                                    style="width: 100px; height: 100px; object-fit: cover;">
+                                <div class="w-100 d-flex flex-column justify-content-center bg-body shadow px-3"
+                                    style="height: 100px;">
+                                    <div class="mb-1" style="font-size: 13px;">
+                                        <a href="">Technology</a>
+                                        <span class="px-1">/</span>
+                                        <span>January 01, 2045</span>
+                                    </div>
+                                    <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <img src="img/news-100x100-3.jpg"
+                                    style="width: 100px; height: 100px; object-fit: cover;">
+                                <div class="w-100 d-flex flex-column justify-content-center bg-body shadow px-3"
+                                    style="height: 100px;">
+                                    <div class="mb-1" style="font-size: 13px;">
+                                        <a href="">Technology</a>
+                                        <span class="px-1">/</span>
+                                        <span>January 01, 2045</span>
+                                    </div>
+                                    <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <img src="img/news-100x100-4.jpg"
+                                    style="width: 100px; height: 100px; object-fit: cover;">
+                                <div class="w-100 d-flex flex-column justify-content-center bg-body shadow px-3"
+                                    style="height: 100px;">
+                                    <div class="mb-1" style="font-size: 13px;">
+                                        <a href="">Technology</a>
+                                        <span class="px-1">/</span>
+                                        <span>January 01, 2045</span>
+                                    </div>
+                                    <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <img src="img/news-100x100-5.jpg"
+                                    style="width: 100px; height: 100px; object-fit: cover;">
+                                <div class="w-100 d-flex flex-column justify-content-center bg-body shadow px-3"
+                                    style="height: 100px;">
+                                    <div class="mb-1" style="font-size: 13px;">
+                                        <a href="">Technology</a>
+                                        <span class="px-1">/</span>
+                                        <span>January 01, 2045</span>
+                                    </div>
+                                    <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Popular News End -->
 
-
+                        <!-- Tags Start -->
+                        <div class="pb-3">
+                            <div class="bg-body shadow py-2 px-4 mb-3">
+                                <h3 class="m-0">Tags</h3>
+                            </div>
+                            <div class="d-flex flex-wrap m-n1">
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+                            </div>
+                        </div>
+                        <!-- Tags End -->
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <!-- footer start -->
-        <div class="container-fluid bg-light pt-5 px-sm-3 px-md-5 bg-body shadow">
+        <div class="container-fluid pt-5 px-sm-3 px-md-5  shadow">
             <div class="row container">
                 <div class="col-lg-3 col-md-6 mb-5">
                     <a href="index.html" class="navbar-brand">
@@ -397,7 +767,11 @@
                         class="text-dark">News</span></a>. All Rights Reserved. Designed by <a
                     class="font-weight-bold text-decoration-none text-danger" href="#">mmsuzon</a>
             </p>
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-dark back-to-top rounded-0" style="display: inline;"><i class="fa fa-angle-up"></i></a>
         </div>
+        
+        
         <!-- all javaScripts -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="scripts/owl.carousel.min.js"></script>
